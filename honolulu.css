@@ -1,0 +1,94 @@
+#honolulu{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background-size: cover;
+    flex-wrap: wrap;
+    } 
+#honolulu img {
+    width: 100%;
+    height: 100%;
+    }
+.info-honolulu{
+       width:100%;
+        height:100%;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        background: #383C45;
+        text-decoration: none;
+        color: #ced4da;
+        font-size: 0.6em;
+        font-weight: 200;
+        }
+.info-honolulu h1{
+    text-align: center;
+    font-size: 1.3em;
+    color: #ced4da;
+    font-weight: 400;
+}
+#honolulu .contenedor-honolulu{
+    
+    flex-wrap: wrap;
+    justify-content: left;
+}
+#boton-conocemas{
+    color:#ced4da ;
+    border: 1px solid #ced4da;
+    padding: 9px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    width: 150px;
+    margin-left: 65px;
+    display: flex;
+
+}
+/*RESPONSIVE*/
+@media (min-width:1024px){
+    #honolulu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .contenedor-honolulu{
+    
+        display: flex;
+         justify-content: left;
+         margin-left:50%;
+         margin-bottom: 90px;
+
+    
+    }
+    #honolulu img {
+        width:50%;
+        height: auto;
+        display: flex;
+        margin-right: 0;
+    }
+    .info-honolulu {
+        line-height: 23px;
+        width:100%;
+        height: auto;
+        margin-top: -64%;
+        border: 1px solid #ced4da;
+         text-align: left;
+         font-size: 0.69em;
+         font-weight: 300;
+        justify-content: center;
+        
+         padding: 15px;
+        }
+         .info-honolulu h1{
+            text-align: left;
+            font-weight: 500;
+            font-size: 2em;
+         }
+         #boton-conocemas{
+            margin-left: 1px;
+            width: 17%;
+          
+         }
+     
+}
+

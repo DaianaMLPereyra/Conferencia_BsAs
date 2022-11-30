@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+.containerticket{
+    width: 1000px;
+}
+/*MENU*/
+header{
+    width: 100%;
+    height: 10vh;
+    background: #3a3f43;
+    color:#ced4da;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 0 20px;
+    z-index: 100;
+    margin: 0;
+}
+.contenedor-header{
+    width: 100%;
+    margin: auto;
+}
+ .contenedor-header h2{
+    float:left;
+    top: 8px;
+    font-weight: 500;
+    justify-content: center;
+    font-size:1.2em;
+    text-align: center;
+    margin-top: 17px;
+}
+header .contenedor-header{
+    display: table;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.menu{ 
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:  #3a3f43;
+    transition: all 0.8s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color:#adb5bd;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+}
+.menu a:hover {
+    background: #6c757d;  
+}
+  #menu-bar:checked ~.menu {
+      transform: translateX(0%);
+}
+#convierteteenorador{
+    color: #f8f9fa;
+}
+#comprarticket{
+    color: #29B629;
+}
+
+/*SECCION VENTA TICKETS*/
+
+.seccioncategorias{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 60%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/*ESTUDIANTE*/
+
+.estudiante{
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+}
+.estudiante h2 ,h3{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.estudiante p,h4{
+    color:#3a3f43 ;
+    font-size: 1.1em;
+}
+
+/*TRAINEE*/
+
+.trainee{
+    border: 1px solid #0095ff;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+}
+.trainee h2 ,h3{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.trainee p,h4{
+    color:#3a3f43 ;
+    font-size: 1.1em;
+}
+
+/*JUNIOR*/
+
+.junior{
+  border: 1px solid #ff9100;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+}
+.junior h2 ,h3{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.junior p,h4{
+    color:#3a3f43 ;
+    font-size: 1.1em;
+}
+
+/*TECTO INTERMEDIO VENTA*/
+.textointermedio{
+    text-align: center;
+  }
+
+/*FORMULARIO*/
+.contenedorform{
+    flex-direction: column;
+    margin: 5%;
+
+}
+
+/*CANTIDAD*/
+#cantidad{
+    margin-top: 2%;
+}
+
+/*CATEGORIAS*/
+#categorias{
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    color: #3a3f43;
+}
+
+/*ALERTE TOTAL*/
+
+#LiverAlertPaceholder{
+    margin-top: 2%;
+    padding: 15px;
+    width: 98%;
+    margin-left: 1%;
+    height:auto;
+    background: #c2e1f7;
+    color: #174873;
+    font-weight: 600;
+    border: 1px solid hsl(197, 54%, 64%);
+    border-radius: 5px;
+}
+/*BOTONES RESUMEN Y BORRAR*/
+
+#btnborrar, #btnresumen{
+    flex-direction: column;
+    margin-top: 5%;
+    border: 1px solid#74b61e ;
+    background: #74b61e;
+    color: #f8f9fa;
+}
+
+/*PIE DE PAGINA */
+
+.pie-menu{
+    width: 100%;
+    height:100%;
+    background-color:rgb(16, 53, 68);
+    text-decoration: none;
+    padding: 0 5px;
+}
+.menu-pie-pag, a{
+    flex-direction: column;
+    text-decoration: none;
+    color: #ced4da;
+    padding:10px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width:700px)
+{
+    .menu a{
+        text-align: right;
+        border: none;
+        font-size: 0.2em;
+        float: right;
+}   
+}
+@media (min-width:768px){
+    header{
+        width: 100%;
+        height: 12vh;
+        background: #3a3f43;
+        color:#dee2e6;
+        position: fixed;
+        top: 0;
+        left:0;
+        padding: 0 60px;
+        z-index: 100;
+        margin:0;
+        display: flex;
+    }
+    .contenedor-header h2{
+        font-size: 1.3em;
+        font-weight: 400;
+     }
+    .contenedor-header{
+         width: 1000px;
+    } 
+    .menu {
+        position: static;
+        width:auto;
+        height: auto;
+         transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .contenedor-header h2{
+        font-size: 1em;
+        font-weight: 400;
+    }
+    header label{
+        display: none;
+    }
+    .menu a{
+        border: none;
+        font-size: 0.8em;
+        float: right;
+        }
+     
+    /*TICKETS*/
+    .containerticket{
+        width: 1000px;
+        margin-top: 5%;
+    }
+    .seccioncategorias{
+        display: flex;
+        margin-left: 30%;
+        margin-right: -15%;
+        font-size: 0.8em;
+    }
+    /*ESTUDIANTES*/
+    .estudiante{
+        margin-top: 1%;
+        padding: 2%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .estudiante h2 ,h3{
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+    .estudiante p,h4{
+        font-size: 1.1em;
+    }
+   
+    /*TRAINEE*/
+    .trainee{
+        padding: 2%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .trainee h2 ,h3{
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+    .trainee p,h4{
+      font-size: 1.1em;
+    }
+    
+    /*JUNIOR*/
+    .junior{
+       padding :2%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .junior h2 ,h3{
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+    .junior p,h4{
+       font-size: 1.1em;
+    }
+    
+    /*TEXTO INTERMEDIO*/
+    .textointermedio{
+      text-align: center;
+    }
+    
+    /*FORMULARIO*/
+    .contenedorform{
+        margin:3% 10% 3% 10%;
+    }
+
+    /*CANTIDAD*/
+    #cantidad{
+        margin-top: 2%;
+    }
+    
+    /*CATEGORIA*/
+    #categorias{
+        display: flex;
+        margin-top: 2%;
+        width: 100%;
+        height: 50%;
+    }
+
+    /*TOTAL A PAGAR*/
+    #LiverAlertPaceholder{
+        margin-top: 2%;
+        padding: 15px;
+        width: 98%;
+        margin-left: 1%;
+        height:auto;
+        font-weight: 600;
+    }
+    
+    /*BOTONES BORRAR Y RESUMEN*/
+    #btnborrar, #btnresumen{
+        margin-top: 5%;
+     }
+
+    /*PIE DE PAGINA*/
+    .pie-menu{
+        bottom: 0;
+    }
+    .menu-pie-pag, a{
+          justify-items: center;
+          display: inline-table;
+          text-align: center;
+          padding:15px 45px;
+          font-size: 0.9em;
+    }
+}   

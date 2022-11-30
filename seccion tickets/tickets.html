@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <meta name="author" content="Daiana ML Pereyra, dashypereyra@gmail.com">
+   <title>Conviertete en orador|tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="seccionticket.css">
+</head>
+<body>
+    <header>
+         <div class="contenedor-header">
+              <h2>Conf  Bs As</h2>
+              <input type="checkbox" id="menu-bar">
+              <label class="icono-menu" for="menu-bar" >&#8801</label>  
+            <nav class="menu">
+              <a  href="#">La conferencia</a>
+              <a href="#" >Los oradores</a>
+              <a href="#" >El lugar y la fecha</a>
+              <a id="convierteteenorador" href="#" >Conviertete en orador </a>
+              <a id="comprarticket"    href="#">Comprar tickets</a>
+           </nav>
+         </div>
+    </header>
+    <br>
+    <div class="containerticket">
+    <div class="seccioncategorias">
+         <div class="estudiante">
+             <h2>Estudiante</h2>
+             <br>
+             <p>Tienen un descuento</p>
+            <br>
+            <h3>80%</h3>
+            <br>
+            <h4>*presentar documentacion</h4>
+        </div>
+        <div class="trainee">
+            <h2>Trainee </h2>
+            <br>
+            <p>Tienen un descuento</p>
+            <br>
+            <h3>50%</h3>
+            <br>
+            <h4>*presentar documentacion</h4>
+           
+        </div>
+        <div class="junior">
+            <h2> Junior</h2>
+            <br>
+            <p>Tienen un descuento</p>
+            <br>
+            <h3>15%</h3>
+            <br>
+            <h4>*presentar documentacion</h4>
+        </div>
+    </div>
+    </div>
+    <br>
+      <div class="textointermedio">
+        <p>VENTA</p>
+        <h1>VALOR DE TICKET $200</h1>
+         </div>
+         <div class="contenedorform">
+         <form  id="formulario2" method="post" >
+         <div  class="row">
+            <div class="col p-1">
+               <input id="nombre"  class="form-control" type="text" name="Nombre" placeholder="Nombre">
+               </div>
+             <div class="col p-1">
+               <input id="apellido"  class="form-control" type="text" name="Apellido" placeholder="Apellido">
+             </div>
+         </div>
+          <div class="row">
+            <div class="col p-1">
+             <input id="inputEmail" class="form-control" type="email"placeholder="Correo">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col p-1">
+               <label for="cantidad">Cantidad</label> 
+               <input id="cantidad" class="form-control" type="number" name="cantidad" placeholder="cantidad">
+             </div>
+             <div class="col p-1">
+                <label for="categorias">Categoria</label> 
+                <select id="categorias"  class="form-selec" name="categoria" placeholder="categorias">
+                      <option value="Estudiante">Estudiante</option>
+                      <option value="Trainee">Trainee</option>
+                      <option value="Junior">Junior</option>
+                </select>
+             </div>
+             <div class="row"id="LiverAlertPaceholder"></div>
+                <div class="col p-1">
+                    <button id="btnborrar" class="btn btn-sucess w-100"    type="reset" onclick="borrar()">Borrar</button>
+                </div>
+                <div class="col p-1">
+                    <button id="btnresumen" class="btn btn-sucess w-100"  type="submit" onclick="resumen()">Resumen</button>
+                </div>
+               </div>
+           <script src="tickets.js"></script> 
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+        </form>
+         </div>
+      </div>
+      <footer>
+        <div class="pie-menu">
+           <nav class="menu-pie-pag">
+               <a id="boton-pregfre" href= "#">Preguntas <br> frecuentes</a>
+               <a href= "#">Contáctanos</a>
+               <a href= "#">Prensa</a>
+               <a href= "#">Conferencia</a>
+               <a id="boton-terycond"  href= "#">Términos y<br> condiciones</a>
+               <a href= "#">Privacidad</a>
+            <a href= "#">Estudiantes</a>
+           </nav>
+        </div>
+    </footer>
+    </body>
+</html>

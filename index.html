@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="description" content="conferencia de prestigiosos oradores en Buenos Aires">
+    <meta name="keywords" content="codo a codo, conferencia, oradores, Buenos Aires">
+    <meta name="author" content="Daiana ML Pereyra,pereyradaianaml@gmail.com">
+   <title>INTEGRADOR|Daiana Pereyra |comision 22567</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="baner.css">
+    <link rel="stylesheet" href="tarjetaspersonas.css">
+    <link rel="stylesheet" href="honolulu.css">
+    
+</head>
+<body>
+  <header>
+    <div class="contenedor-header">
+       <img class="icono-logo"src="./IMG/codoacodo.png" alt="logo codo a codo">
+       <h2>Conf  Bs As</h2>
+       <input type="checkbox" id="menu-bar">
+       <label class="icono-menu" for="menu-bar" >&#8801</label>  
+        <nav class="menu">
+          <a id="laconferencia"  href="#">La conferencia</a>
+          <a href="#" >Los oradores</a>
+          <a href="#" >El lugar y la fecha</a>
+          <a href="./seccion tickets/tickets.html" >Conviertete en orador </a>
+          <a id="comprarticket"    href="#">Comprar tickets</a>
+       </nav>
+    </div>
+</header>
+<main>
+    <section id="baner-galeria">
+        <ul>
+            <li class="ba1"><img src="./IMG/ba1.jpg" ></li>
+            <li class="ba2"><img src="./IMG/ba2.jpg"></li>
+            <li class="ba3"><img src="./IMG/ba3.jpg" ></li>      
+        </ul>
+        <div class="contenedor-texto">
+            <h1>Conf Bs As</h1>
+            <br>
+            <p>Bs As llega por primera vez a Argentina. Un evento para
+            compartir con<br>nuestra comunidad el conocimiento y experiencia de los
+            expertos que<br> están creando el futuro de Internet. Ven a conocer a miembros del <br>evento, a otros estudiantes de Codo a Codo y los
+            oradores de primer<br> nivel que tenemos para tí. Te esperamos! </p>
+            <a href="#" class="boton-serorador">Quiero ser orador</a>
+            <a href="#" class="boton-comprar">Comprar ticket</a>  
+        </div>
+    </section>
+    <section id="conoce">
+        <h5>CONOCE A LOS</h5>
+        <h1>ORADORES</h1>
+    </section>
+    <section id="personas">
+        <div class="contenedor-personas">
+            <article>
+                <img src="./IMG/steve.jpg">
+                <br>
+                <boton class="boton-javascript"   href="#">JavaScript</boton>
+                <boton id="boton-react1" href="#">React</boton>
+                <br>
+                <h2> Steve Jobs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipsicing<br>
+                 elit. Et voluptatibus perferendis deleniti, totam fuga <br>
+                 sequi iste! Facilis explicabo repellat ut similique<br>
+                 incidynt? Ullam nobis beatae, corporis facilis veniam<br>
+                 magni ratione!</p>
+            </article>
+            <article>
+                <img src="./IMG/bill.jpg">
+                <br>
+                <boton class="boton-javascript" href="#">JavaScript</boton>
+                <boton id="boton-react2" href="#">React</boton>
+                <br>
+                <h2> Bill Gates</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipsicing<br>
+                elit. Et voluptatibus perferendis deleniti, totam fuga <br>
+                sequi iste! Facilis explicabo repellat ut similique<br>
+                incidynt? Ullam nobis beatae, corporis facilis veniam<br>
+                magni ratione!</p>
+            </article>
+            <article>
+                <img src="./IMG/ada.jpeg">
+                <br>
+                <boton id="boton-negocios"href="#">Negocios</boton>
+                <boton id="boton-startups" href="#">Startups</boton>
+                <br>
+                <h2> Ada Lovelace</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipsicing<br>
+                    elit. Et voluptatibus perferendis deleniti, totam fuga <br>
+                    sequi iste! Facilis explicabo repellat ut similique<br>
+                    incidynt? Ullam nobis beatae, corporis facilis veniam<br>
+                    magni ratione!</p>
+            </article>
+        </div>
+    </section>
+     <br>
+    <section id="honolulu">
+        <img src="./IMG/honolulu.jpg" alt="honolulu">
+           <div  class="contenedor-honolulu">
+            <div class="info-honolulu">
+               <h1>Bs As - Octubre</h1>
+                <br>
+                <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la <br>
+                    mas sureña de entre las principales ciudades estadounidenses.Aunque el nombre de Honolulu se refiere al area <br>
+                    urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-<br>
+                    condado consolidada que cubre toda la ciudad(aproximadamente 600km2 de superficie).   
+                 </p>
+                 <br>
+                 <a  id="boton-conocemas"  href="#"> Conoce mas</a>
+             </div>
+           </div>
+     </section>
+    <br>
+</main>
+<h5 class="conocealos">CONVIERTETE EN UN</h5>
+<h1 class="oradores">ORADOR</h1>
+<br>
+<p class="anotate">Anotate como un orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
+<form  class="formulario"  action="mailto:ejemplz@gmail.com" method="post" enctype="text/plain">
+     <input id="nombre" type="text" name="Nombre" value="Nombre">
+     <input id="apellido"  type="text" name="Apellido" value="Apellido">
+      <br>
+       <textarea  id="pregunta"  name="hablar">Sobre qué quieres hablar?</textarea>
+       <br>
+       <p class="recordar">Recuerda incluir un título para tu charla</p>
+       <div class="boton-formulario">
+            <button class="boton-enviar" type="button">Enviar</button>
+       </div>
+</form>
+
+<footer>
+    <div class="pie-menu">
+       <nav class="menu-pie-pag">
+           <a id="boton-pregfre" href= "#">Preguntas <br> frecuentes</a>
+           <a href= "#">Contáctanos</a>
+           <a href= "#">Prensa</a>
+           <a href= "#">Conferencia</a>
+           <a id="boton-terycond"  href= "#">Términos y<br> condiciones</a>
+           <a href= "#">Privacidad</a>
+        <a href= "#">Estudiantes</a>
+       </nav>
+    </div>
+</footer>
+</body>
+</html>

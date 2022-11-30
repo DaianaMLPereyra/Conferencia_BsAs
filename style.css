@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'Poppins', sans-serif;
+    
+    }
+
+
+
+/*TEXTO INTERMEDIO 1*/
+#conoce h1 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 500;
+}
+h5{
+    font-weight: 600;
+    text-align: center;
+}
+/*TEXTO INTERMEDIO 2*/
+.conocealos h5 , .oradores{
+    text-align: center;  
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.oradores{
+    font-weight: 600;
+}
+
+
+.anotate {
+    text-align: center;
+    color:#343a40;
+    font-size: 0.9em;
+}
+
+/*FORMULARIO*/
+.formulario{
+    margin-left: 1%;
+    flex-direction: column;
+}
+#nombre, #apellido,#pregunta {
+    flex-direction: column;
+    border:1px solid #adb5bd;
+    width: 95%;
+    height: 30%;
+    color: #adb5bd;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+}
+#pregunta {
+    width: 95%;
+    height: 160%;
+    font-size: 1em;
+    
+
+}
+.recordar{
+    text-align: left;
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-left: 7px;
+    margin-bottom: 30px;
+    
+
+}
+.boton-enviar{
+    width: 95%;
+    height: 40%;
+    background-color: rgba(110, 196, 17, 0.811);
+    height: 38px;
+    border: 1px solid rgba(110, 196, 17, 0.811) ;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    color: #f8f9fa;
+    font-size: 20px;
+}
+/*PIE DE PAGINA */
+
+ .pie-menu{
+    width: 100%;
+    height:100%;
+    background-color:rgb(16, 53, 68);
+    text-decoration: none;
+    padding: 0 5px;
+
+    
+}
+.menu-pie-pag, a{
+    flex-direction: column;
+text-decoration: none;
+color: #ced4da;
+padding:10px;
+font-size: 0.9em;
+margin-top: 10px;
+text-align: center;
+justify-content: center;
+
+}
+
+
+
+
+
+/*RESPONSIVE*/
+@media (min-width:768px){
+    #conoce{
+        text-align: center;
+        margin-top: 0;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    h5{
+        font-weight: 400;
+        font-size: 0.7em;
+        text-align: center;
+    
+        
+    }
+    .conocealos {
+        margin-top: -5%;
+
+    }
+    .conocealos  , .oradores{
+        text-align: center;  
+        font-size: 1.2em;
+        font-weight: 400;
+
+    }
+    .oradores{
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .formulario{
+        margin-left: 24%;
+    }
+#nombre, #apellido,#pregunta{
+            border:1px solid #92989e;
+            width: 33%;
+            height: 15%;
+            color: #92989e;
+            padding: 10px;
+            font-size: 1em;
+            }
+#pregunta {
+        width: 68%;
+        padding-bottom: 100px;
+        padding-right: 60px;
+        font-size: 1.3em;
+        
+        }
+.recordar{
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #92989e;
+}
+.boton-enviar{
+    width: 68%;
+    height: 40px;
+
+}
+
+.pie-menu{
+  bottom: 0;
+  
+
+    
+}
+.menu-pie-pag, a{
+    justify-items: center;
+    display: inline-table;
+    text-align: center;
+    padding:15px 45px;
+    font-size: 0.9em;
+    
+    
+
+}
+}
+
+
+
+
+        
+
+
+

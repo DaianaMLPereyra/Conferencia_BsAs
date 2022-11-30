@@ -1,0 +1,179 @@
+#baner-galeria {
+    overflow: hidden;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 67vh;
+    background-size: cover;
+   text-align:center;
+}
+#baner-galeria img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.2);
+    display: flex;
+    background-size: cover;
+}
+#baner-galeria li{
+    width: 100%;
+    list-style:none;
+}
+#baner-galeria ul{
+    width: 300%;
+    height: 100%;
+    display:flex;
+    padding: 0;
+    animation: cambio 15s infinite alternate linear;
+}
+@keyframes cambio{
+    0%{ margin-left:0; }
+    20%{margin-left: 0; }
+   
+    25%{ margin-left: -100%;}
+    45%{margin-left:-100%;}
+   
+    50%{ margin-left: -200%;}
+    75%{margin-left:-200%;}
+   
+    75%{ margin-left: -200%;}
+    100%{margin-left:-200%;}
+}
+ .contenedor-texto p{
+    color:#ced4da;
+    position:absolute;
+    transform: traslate(-50%, -50%);
+    top: 25%;
+    right: 5%;
+    text-align:center;
+    justify-content: center;
+    font-size:0.73em;
+    font-weight: 300;
+    line-height: 17px;
+}
+.contenedor-texto h1{
+    font-weight: 500;
+    color:#ced4da;
+    position:absolute;
+    transform: traslate(-50%, -50%);
+    top: 10%;
+    right: 30%;
+    text-align:center;
+    font-size:1.5em;
+    
+}
+/*BOTONES DE GALERIA*/
+#baner-galeria a{
+    position:absolute;
+    transform: traslate(-50%, -50%);
+    text-align: center;
+    padding: 8px;
+    top:70%;
+    font-size:0,8em;
+    border-radius: 10px;
+    flex-direction: column;
+    
+    
+}
+.boton-serorador{
+    background-color: rgba(255, 255, 255, 0.017);
+    color: #ced4da;
+    border: 1px solid #ced4da;
+    text-decoration:none;
+    padding: 5px 5px;
+    margin-right: 10%;
+    border-radius: 4px;
+    left: 30%;
+    width: 40%;
+    font-size: 0.7em;
+ }
+.boton-comprar{
+    background-color:#29B629;
+    color: #f8f9fa;
+    text-decoration:none;
+    border:1px solid  #29B629 ;
+    padding: 5px 5px;   
+    border-radius: 4px;
+    margin-top: 15%;
+    left: 30%;
+    width: 40%;
+    font-size: 0.7em;
+
+    
+}
+
+
+
+/*RESPONSIVE*/
+@media (min-width:768px){
+    
+     
+        .contenedor-texto h1{
+            text-align:center;
+            top: 10%;
+            display: flex;
+           justify-content: center;
+           right: 43%;
+
+
+        }
+        .contenedor-texto p{
+            font-size: 0.9em;
+            top: 25%;
+            text-align: center;
+            line-height: normal;
+            right: 18%;
+        
+        }
+        #baner-galeria a{
+            top: 55%;
+        }
+        .boton-comprar{
+           margin-top: 10%;
+        }
+        
+    }
+    
+    
+    @media (min-width:1024px){
+        #baner-galeria{
+            height: 100vh;
+        }
+        .contenedor-texto h1{
+            text-align: end;
+            display: flex;
+           font-size: 1.5em;
+           justify-content: center;
+           top: 37%;
+           left: 75%;
+           width: 20%;
+
+        }
+        .contenedor-texto p{
+            font-size: 1em;
+            text-align: right;
+            line-height: 25px;
+            top: 45%;
+            left: 40%;
+            margin-right: -15%;
+            display: flex;
+            
+        }
+        #baner-galeria a{
+            top: 70%;
+            font-size: 0.8em;
+            margin-right: 10%;
+            display: flex;
+            width: 11%;
+            height: 7%;
+        }
+        .boton-serorador{
+            margin-left:37% ;
+            margin-top: 1%;
+        }
+     
+        .boton-comprar{
+         margin-left: 49%;
+         margin-top: 1%;
+        
+        }
+    }
